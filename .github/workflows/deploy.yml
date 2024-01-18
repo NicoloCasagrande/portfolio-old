@@ -12,6 +12,6 @@ jobs:
           npm install
           npm run build
 
-      - name: Deploy 🚀
+      - name: Deploy
         with:
           publish_dir: ./dist
