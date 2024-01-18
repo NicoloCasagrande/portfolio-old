@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
+*{
+    font-family: "Titillium Web", sans-serif;
+}
 .home-div{
     min-height: 100vh;
 }
