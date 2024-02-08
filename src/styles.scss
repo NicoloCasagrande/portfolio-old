@@ -8,7 +8,7 @@
   }
 }
 body {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
 }
 
 .home-div {
@@ -25,11 +25,6 @@ body {
   max-width: 36rem;
 }
 
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.home-div{
-  background-image: url('./assets/images/16404600_v664-tang-03-memphis.jpg')!important;
+.home-div {
+  background-image: linear-gradient(to top, #ebc0fd 0%, #d9ded8 100%);
 }
