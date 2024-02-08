@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-const colors = require('tailwindcss/colors')
+const colors = require("tailwindcss/colors");
 module.exports = {
   content: ["./src/**/*.{html,ts}"],
   theme: {
@@ -8,17 +8,19 @@ module.exports = {
       tertiary: colors.blue,
       primary: colors.slate,
       secondary: colors.amber,
-      background: '#260296'
+      white: "#fff",
+      black: "#000",
+      slate: colors.slate,
+      background: "#260296",
     },
     extend: {
-      lineHeight:{
-        '11': '3.2rem',
-        '12': '4rem',
-        '13': '5rem', 
-        '14': '8rem'
-      }
+      lineHeight: {
+        11: "3.2rem",
+        12: "4rem",
+        13: "5rem",
+        14: "8rem",
+      },
     },
   },
   plugins: [],
-}
-
+};
