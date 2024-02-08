@@ -4,3 +4,12 @@ header {
   right: 0;
   left: 0;
 }
+
+img {
+  width: 80px;
+  height: 80px;
+  @media (min-width: 1024px) {
+    width: 100px;
+    height: 100px;
+  }
+}
