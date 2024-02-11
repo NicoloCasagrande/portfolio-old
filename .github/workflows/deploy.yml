@@ -8,6 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Install and Build 🔧
+        working-directory: /home/runner/work/portfolio/portfolio/
         run: |
           npm install
           npm run build
