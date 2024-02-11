@@ -13,5 +13,6 @@ jobs:
           npm run build
 
       - name: Deploy
+        uses: actions/checkout@v2
         with:
-          publish_dir: ./dist
+          publish_dir: ./dist/my-portfolio
