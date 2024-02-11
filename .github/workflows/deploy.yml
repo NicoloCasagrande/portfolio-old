@@ -10,12 +10,13 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
       
-      - name: Install and Build 🔧
+      - name: Install Dependencies and Build 🔧
         run: |
           npm install
-          ng build
+          npm run build
 
       - name: Deploy
-        uses: actions/checkout@v2
+        uses: peaceiris/actions-gh-pages@v3
         with:
+          github_token: ${{ secrets.TOKEN }}
           publish_dir: ./dist/my-portfolio
