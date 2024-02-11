@@ -5,15 +5,13 @@ on:
       - main
 jobs:
   build-and-deploy:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
       
       - name: Install and Build 🔧
-        runs-on: self-hosted
         run: |
-          cd /home/runner/work/portfolio/
           npm install
           npm run build
 
