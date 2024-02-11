@@ -12,9 +12,8 @@ jobs:
       
       - name: Install and Build 🔧
         run: |
-          ng build
           npm install
-          npm run build
+          ng build
 
       - name: Deploy
         uses: actions/checkout@v2
