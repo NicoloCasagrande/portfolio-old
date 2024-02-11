@@ -12,6 +12,7 @@ jobs:
       
       - name: Install and Build 🔧
         run: |
+          ng build
           npm install
           npm run build
 
