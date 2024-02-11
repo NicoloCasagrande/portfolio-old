@@ -11,8 +11,8 @@ jobs:
         uses: actions/checkout@v2
       
       - name: Install and Build 🔧
-        working-directory: /home/runner/work/portfolio/
         run: |
+          cd /home/runner/work/portfolio/
           npm install
           npm run build
 
