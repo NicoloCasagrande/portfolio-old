@@ -7,11 +7,14 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-    - name: Install and Build 🔧
-      working-directory: /home/runner/work/portfolio/
-      run: |
-        npm install
-        npm run build
+      - name: Checkout code
+        uses: actions/checkout@v2
+      
+      - name: Install and Build 🔧
+        working-directory: ./path/to/your/project
+        run: |
+          npm install
+          npm run build
 
       - name: Deploy
         uses: actions/checkout@v2
